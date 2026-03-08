@@ -1,0 +1,281 @@
+body{
+    margin: 0;
+    background: #f6f7fb;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.performance-report{
+    min-height: 100vh;
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.page-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.page-subtitle{
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.export-btn{
+    padding: 8px 14px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.export-btn:hover{
+    background: #e9ecef;
+}
+
+/* ---------- SEARCH + FILTER ---------- */
+
+.search-filter-section{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.searchbar input{
+    width: 300px;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    outline: none;
+}
+
+.searchbar input:focus{
+    border-color: #3b5bdb;
+}
+
+.filters{
+    display: flex;
+    gap: 10px;
+}
+
+.filters select{
+    min-width: 140px;
+    padding: 8px 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: white;
+    outline: none;
+}
+
+/* ---------- SUMMARY CARDS ---------- */
+
+.performance-summary-cards-section{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.card-item{
+    flex: 1;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.item-label{
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.item-value{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* ---------- TABLE SECTION ---------- */
+
+.performance-report-table-section{
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+.table-header{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.table-columns{
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.table-column-heading{
+    flex: 1;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.table-body{
+    margin-top: 6px;
+}
+
+.table-row{
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.table-column-item{
+    flex: 1;
+    font-size: 14px;
+    color: #343a40;
+}
+
+/* give employee name more width */
+
+.table-column-heading:nth-child(1),
+.table-column-item:nth-child(1){
+    flex: 1.6;
+}
+
+/* ---------- PAGINATION ---------- */
+
+.pagination-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-number{
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.pagination-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.prev-btn,
+.next-btn{
+    padding: 8px 14px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.prev-btn:hover,
+.next-btn:hover{
+    background: #e9ecef;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px){
+
+/* ---------- HEADER ---------- */
+
+.page-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+/* ---------- SEARCH + FILTER ---------- */
+
+.search-filter-section{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.searchbar input{
+    width: 100%;
+}
+
+.filters{
+    flex-direction: column;
+}
+
+.filters select{
+    width: 100%;
+}
+
+
+/* ---------- SUMMARY CARDS ---------- */
+
+.performance-summary-cards-section{
+    flex-direction: column;
+}
+
+
+/* ---------- TABLE ---------- */
+
+/* hide column headers */
+
+.table-columns{
+    display: none;
+}
+
+/* stack rows */
+
+.table-row{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 14px 0;
+}
+
+/* make rows look like small cards */
+
+.table-row{
+    border-bottom: 1px solid #e9ecef;
+}
+
+.table-column-item{
+    width: 100%;
+}
+
+
+/* ---------- PAGINATION ---------- */
+
+.pagination-section{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.pagination-btn{
+    display: flex;
+    gap: 10px;
+}
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Report</title>
+    <link rel="stylesheet" href="performance_report.css">
+</head>
+<body>
+    <div class="performance-report">
+        <div class="page-header">
+            <div class="page-heading">
+                <div class="page-title">Performance Reports</div>
+                <div class="page-subtitle">Analyze employee productivity and task performance</div>
+            </div>
+            <div class="header-btn">
+                <button class="export-btn">Export</button>
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="search-filter-section">
+                <div class="searchbar">
+                    <input type="text" name="input-search" id="inputSearch" placeholder="Search by employee name">
+                </div>
+                <div class="filters">
+                    <div class="filter-by-month">
+                        <select name="month" id="month">
+                            <option value="">Select month</option>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                    </div>
+                    <div class="filter-by-year">
+                        <select name="year" id="year">
+                            <option value="">Select year</option>
+                            <option value="2026">2026</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="performance-summary-cards-section">
+                <div class="card-item">
+                    <div class="item-label">Total Employees</div>
+                    <div class="item-value">0</div>
+                </div>
+                <div class="card-item">
+                    <div class="item-label">Average Completion Rate</div>
+                    <div class="item-value">0</div>
+                </div>
+                <div class="card-item">
+                    <div class="item-label">Total Tasks Completed</div>
+                    <div class="item-value">0</div>
+                </div>
+                <div class="card-item">
+                    <div class="item-label">Total Pending Tasks</div>
+                    <div class="item-value">0</div>
+                </div>
+            </div>
+
+            <div class="performance-report-table-section">
+                <div class="table-header">Performance Records</div>
+                <div class="table-columns">
+                    <div class="table-column-heading">Employee Name</div>
+                    <div class="table-column-heading">Tasks Assigned</div>
+                    <div class="table-column-heading">Average Completion Rate</div>
+                    <div class="table-column-heading">Pending</div>
+                    <div class="table-column-heading">Completion %</div>
+                    <div class="table-column-heading">Attendance %</div>
+                </div>
+                <div class="table-body">
+                    <div class="table-row">
+                        <div class="table-column-item">Bittu</div>
+                        <div class="table-column-item">0</div>
+                        <div class="table-column-item">0 %</div>
+                        <div class="table-column-item">0</div>
+                        <div class="table-column-item">0 %</div>
+                        <div class="table-column-item">0 %</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination-section">
+                <div class="page-number">Showing 1-10 of 45</div>
+                <div class="pagination-btn">
+                    <button class="prev-btn">Previous</button>
+                    <button class="next-btn">Next</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
