@@ -120,3 +120,51 @@ body {
 .menu-link:visited{
   color: inherit;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .manage-users {
+        padding: 16px;
+    }
+    /* Header stack */
+    .manage-user-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .add-user-btn {
+        align-self: flex-start;
+    }
+    /* Filters stack */
+    .user-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-input {
+        width: 100%;
+    }
+    .role-filter,
+    .status-filter {
+        width: 100%;
+        padding: 8px;
+    }
+    /* Hide table header */
+    .user-list-titles {
+        display: none;
+    }
+    /* Convert rows to cards */
+    .user-list-items {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 16px;
+    }
+    .user-list-items .value {
+        width: 100%;
+    }
+    .user-list-items .actions {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
