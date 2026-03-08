@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 32px;
 }
 .attendance-title {
@@ -143,12 +144,10 @@ body {
     font-size: 14px;
     color: #6c757d;
 }
-
 .pagination-btn {
     display: flex;
     gap: 10px;
 }
-
 .prev-btn,
 .next-btn {
     padding: 8px 14px;
@@ -158,8 +157,41 @@ body {
     cursor: pointer;
     font-size: 14px;
 }
-
 .prev-btn:hover,
 .next-btn:hover {
     background: #e9ecef;
+}
+
+@media (max-width: 768px){
+
+.search-input input{
+    width: 100%;
+}
+
+.search-filter-section {
+    flex-direction: column;
+}
+.filters-group {
+    flex-direction: column;
+    justify-content: center;
+}
+.month,
+.year,
+.status{
+    width: 100%;
+}
+.attendance-summary-cards {
+    flex-direction: column;
+}
+.table-columns-label {
+    display: none;
+}
+.table-row {
+    flex-direction: column;
+}
+.pagination-section {
+    align-items: flex-start;
+    gap : 10px;
+    flex-direction: column;
+}
 }
