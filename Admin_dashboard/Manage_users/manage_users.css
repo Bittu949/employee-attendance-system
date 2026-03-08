@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background: #f6f7fb;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+.manage-users {
+    padding: 24px;
+}
+.manage-user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.manage-user-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.manage-user-subtitle{
+    font-size: 14px;
+    color: #6c757d;
+}
+.add-user-btn{
+    padding: 8px 14px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.add-user-btn:hover{
+    background: #e9ecef;
+}
+.user-filters {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.search-input{
+    width: 320px;
+    padding: 10px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    outline: none;
+}
+.search-input:focus{
+    border-color: #3b5bdb;
+}
+.role-filter,
+.status-filter{
+    width: 120px;
+    padding: 4px 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: white;
+    outline: none;
+}
+.user-list {
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.user-list-titles{
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f3f5;
+}
+.user-list-titles .label{
+    flex: 1;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+.user-list-items{
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f3f5;
+}
+.user-list-items .value{
+    flex: 1;
+    font-size: 14px;
+    color: #343a40;
+}
+.user-list-titles .label:first-child,
+.user-list-items .value:first-child{
+    flex: 1.5;
+}
+.user-list-titles .label:last-child,
+.user-list-items .actions{
+    flex: 2.5;
+}
+.user-list-items .actions{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.user-list-items .actions button{
+    padding: 6px 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+.user-list-items .actions button:hover{
+    background: #e9ecef;
+}
+.menu-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.menu-link:visited{
+  color: inherit;
+}

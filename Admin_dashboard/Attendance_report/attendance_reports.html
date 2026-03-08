@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Reports</title>
+    <link rel="stylesheet" href="attendance_reports.css">
+</head>
+<body>
+    <div class="attendance-reports">
+
+        <div class="attendance-header">
+            <div class="left-side-content">
+                <div class="attendance-title">Attendance Reports</div>
+                <div class="attendance-subtitle">View and analyze employee attendance records</div>
+            </div>
+            <div class="right-side-button">
+                <button class="export-btn">Export</button>
+            </div>
+        </div>
+
+        <div class="search-filter-section">
+            <div class="search-input">
+                <input type="text" placeholder="Search by employee name">
+            </div>
+            <div class="filters-group">
+                <div class="month-filter">
+                    <select name="month" id="month">
+                        <option value="">Month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+                <div class="year-filter">
+                    <select name="year" id="year">
+                        <option value="">Year</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+                <div class="status-filter">
+                    <select name="status" id="status">
+                        <option value="">All</option>
+                        <option value="present">Present</option>
+                        <option value="absent">Absent</option>
+                        <option value="late">Late</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="attendance-summary-cards">
+            <div class="card-item">
+                <div class="label">Total Employees</div>
+                <div class="value">0</div>
+            </div>
+            <div class="card-item">
+                <div class="label">Present</div>
+                <div class="value">0</div>
+            </div>
+            <div class="card-item">
+                <div class="label">Absent</div>
+                <div class="value">0</div>
+            </div>
+            <div class="card-item">
+                <div class="label">Attendance %</div>
+                <div class="value">0</div>
+            </div>
+        </div>
+
+        <div class="attendance-records-table">
+            <div class="table-heading">Attendance Records</div>
+            <div class="table-columns-label">
+                <div class="table-column">Employee Name</div>
+                <div class="table-column">Date</div>
+                <div class="table-column">Check In</div>
+                <div class="table-column">Check Out</div>
+                <div class="table-column">Working Hours</div>
+                <div class="table-column">Status</div>
+            </div>
+            <div class="table-body">
+                <div class="table-row">
+                    <div class="data-value">Bittu</div>
+                    <div class="data-value">23-03-2026</div>
+                    <div class="data-value">10:00 AM</div>
+                    <div class="data-value">04:00 PM</div>
+                    <div class="data-value">6h 0m</div>
+                    <div class="data-value">Present</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination-section">
+            <div class="total-pages">Showing 1-10 of 45</div>
+            <div class="pagination-btn">
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
