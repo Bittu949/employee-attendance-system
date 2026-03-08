@@ -144,3 +144,38 @@ body{
 .cancel-btn:hover {
     background: #e9ecef;
 }
+
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+  .assign-task{
+    padding:16px;
+  }
+  /* Form becomes single column */
+  .form-card form{
+    grid-template-columns: 1fr;
+  }
+  /* Hide preview table header */
+  .task-preview-header-section{
+    display:none;
+  }
+  /* Convert preview row into card */
+  .task-preview-item-section{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:6px;
+    padding:16px 0;
+  }
+  .task-preview-column-item{
+    width:100%;
+  }
+  /* Buttons stack nicely */
+  .action-btn{
+    justify-content:flex-start;
+  }
+  .assign-task-btn,
+  .cancel-btn{
+    width:100%;
+    text-align:center;
+  }
+}
