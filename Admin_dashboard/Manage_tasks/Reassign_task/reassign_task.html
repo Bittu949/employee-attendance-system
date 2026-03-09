@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reassign Task</title>
+    <link rel="stylesheet" href="reassign_task.css">
+</head>
+<body>
+    <div class="reassign-task-page">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="title">Reassign Task</div>
+            <div class="subtitle">Assign this task to another employee</div>
+        </div>
+
+        <div class="form-card">
+            <form>
+                <div class="form-group">
+                    <label>Task Title</label>
+                    <input type="text" value="Complete Assignment" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Currently Assigned To</label>
+                    <input type="text" value="Bittu" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Reassign To</label>
+                    <select>
+                        <option value="">Select Employee</option>
+                        <option value="rahul">Rahul</option>
+                        <option value="neha">Neha</option>
+                        <option value="aman">Aman</option>
+                    </select>
+                </div>
+                <div class="action-btn">
+                    <button type="submit" class="reassign-btn">Reassign Task</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
