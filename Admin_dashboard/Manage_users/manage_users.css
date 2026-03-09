@@ -101,7 +101,7 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.user-list-items .actions button{
+.user-list-items .actions .action-btn{
     padding: 6px 10px;
     border: 1px solid #dee2e6;
     border-radius: 6px;
@@ -109,7 +109,7 @@ body {
     font-size: 13px;
     cursor: pointer;
 }
-.user-list-items .actions button:hover{
+.user-list-items .actions .action-btn:hover{
     background: #e9ecef;
 }
 .menu-link{
