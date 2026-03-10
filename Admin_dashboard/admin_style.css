@@ -144,6 +144,23 @@ body {
 .task-title {
     text-align: left; flex: 2;
 }
+.view {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 20px;
+}
+.view-btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.view-btn:hover {
+    background: #e9ecef;
+}
 .assigned-to, .deadline, .status, .view {
     flex: 1;
     text-align: center;
