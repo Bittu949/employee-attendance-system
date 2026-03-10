@@ -171,28 +171,35 @@ body {
 .task-status {
     flex: 1;
 }
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.menu-link:visited{
+  color: inherit;
+}
 
 @media (max-width: 768px) {
-
     .app {
         flex-direction: column;
     }
-
     .sidebar {
-        background: white;
+        display: flex;
         width: 100%;
+        align-items: center;
         border-right: none;
+        border-bottom: 2px solid #e9ecef;
+        padding: 16px;
     }
     .menu {
-        width: 100%;
+        margin-top: 10px;
         display: flex;
-        gap: 3px;
+        gap: 10px;
+        overflow-x: auto;
     }
     .menu-item {
-        flex: 1;
-        text-align: center;
-        padding: 8px 4px;
-        font-size: 14px;
+        white-space: nowrap;
     }
     .summary-cards {
         flex-direction: column;

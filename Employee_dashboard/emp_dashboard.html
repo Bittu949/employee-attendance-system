@@ -34,7 +34,7 @@
                     <div class="welcome">Welcome back,</div>
                     <div class="sub-welcome">Here’s what’s happening today</div>
                 </div>
-                <button class="logout-btn">Logout</button>
+                <a id="logoutBtn" class="logout-btn menu-link">Logout</a>
             </div>
 
             <!-- Summary cards section -->
@@ -82,5 +82,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let button = document.getElementById("logoutBtn");
+
+        button.addEventListener("click", function(event){
+            let isConfirm = confirm("Are you sure want to logout ?");
+
+            if(isConfirm){
+                window.location.href = "../index.html";
+            }
+        })
+    </script>
 </body>  
 </html>
