@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task</title>
+    <link rel="stylesheet" href="my_tasks.css">
+</head>
+<body>
+    <div class="app">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="menu">
+                <a href="../emp_dashboard.html" class="menu-item menu-link">Dashboard</a>
+                <a href="../Profile/profile.html" class="menu-item menu-link">Profile</a>
+                <a href="../Attendance/attendance.html" class="menu-item menu-link">Attendance</a>
+                <a href="../Settings/settings.html" class="menu-item menu-link">Settings</a>
+                <a href="my_tasks.html" class="menu-item active menu-link">My Tasks <span>0</span></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Header -->
+            <div class="dashboard-header">
+                <div>
+                    <div class="welcome">My Tasks</div>
+                    <div class="sub-welcome">Tasks assigned to you</div>
+                </div>
+                <button class="logout-btn">Logout</button>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="summary-cards">
+                <div class="stat-card">
+                    <div class="label">Total Tasks</div>
+                    <div class="value">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Completed</div>
+                    <div class="value">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Pending</div>
+                    <div class="value">0</div>
+                </div>
+            </div>
+
+            <!-- Task List -->
+            <div class="task-list">
+                <div class="section-title">Assigned Tasks</div>
+                <div class="task-header">
+                    <div>Task Title</div>
+                    <div>Deadline</div>
+                    <div>Priority</div>
+                    <div>Status</div>
+                    <div>Action</div>
+                </div>
+                <div class="task-row">
+                    <div>Complete Timesheet</div>
+                    <div>05 Mar 2026</div>
+                    <div class="priority high">High</div>
+                    <div class="status pending">Pending</div>
+                    <div class="actions">
+                        <button class="view-btn">View</button>
+                        <select class="status-select">
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="task-row">
+                    <div>Submit Report</div>
+                    <div>07 Mar 2026</div>
+                    <div class="priority medium">Medium</div>
+                    <div class="status progress">In Progress</div>
+                    <div class="actions">
+                        <button class="view-btn">View</button>
+                        <select class="status-select">
+                            <option>Pending</option>
+                            <option selected>In Progress</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
