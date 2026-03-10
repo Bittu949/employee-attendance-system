@@ -91,10 +91,10 @@
                 </div>
                 <div class="task-list-column-item">Pending</div>
                 <div class="task-list-action-btn">
-                    <a href="View\view.html" class="btn-view menu-link">View</a>
-                    <a href="Edit_task\edit_task.html" class="btn-edit menu-link">Edit</a>
-                    <button class="btn-delete">Delete</button>
-                    <a href="Reassign_task\reassign_task.html" class="btn-reassign menu-link">Reassign</a>
+                    <a href="View/view.html" class="btn-view menu-link">View</a>
+                    <a href="Edit_task/edit_task.html" class="btn-edit menu-link">Edit</a>
+                    <a href="#" id="btn-delete" class="btn-delete menu-link">Delete</a>
+                    <a href="Reassign_task/reassign_task.html" class="btn-reassign menu-link">Reassign</a>
                 </div>                
             </div>
         </div>
@@ -110,5 +110,16 @@
             </div>
          </div>
     </div>
+
+    <script>
+        let button = document.getElementById("btn-delete");
+        button.addEventListener("click", function(event){
+            let isTrue = confirm("Are you sure want to remove this task ?");
+
+            if(!isTrue){
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
