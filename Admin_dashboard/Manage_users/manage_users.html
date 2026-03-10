@@ -50,8 +50,8 @@
                 <div class="value">Active</div>
                 <div class="value actions">
                     <a href="Edit_user\edit_user.html" class="action-btn menu-link">Edit</a>
-                    <button class="action-btn">Activate</button>
-                    <button class="action-btn">Deactivate</button>
+                    <a href="#" class="action-btn activate-btn menu-link">Activate</a>
+                    <a href="#" class="action-btn deactivate-btn menu-link">Deactivate</a>
                     <a href="Reset_password\reset_password.html" class="action-btn menu-link">Reset Password</a>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="value">Active</div>
                 <div class="value actions">
                     <a href="Edit_user\edit_user.html" class="action-btn menu-link">Edit</a>
-                    <button class="action-btn">Deactivate</button>
+                    <a href="#" class="action-btn deactivate-btn menu-link">Deactivate</a>
                     <a href="Reset_password\reset_password.html" class="action-btn menu-link">Reset Password</a>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="value">Inactive</div>
                 <div class="value actions">
                     <a href="Edit_user\edit_user.html" class="action-btn menu-link">Edit</a>
-                    <button class="action-btn">Activate</button>
+                    <a href="#" class="action-btn activate-btn menu-link">Activate</a>
                     <a href="Reset_password\reset_password.html" class="action-btn menu-link">Reset Password</a>
                 </div>
             </div>
@@ -91,5 +91,28 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let activateButtons = document.querySelectorAll(".activate-btn");
+        let deactivateButtons = document.querySelectorAll(".deactivate-btn");
+
+        activateButtons.forEach(function(button){
+            button.addEventListener("click", function(event){
+                let isTrueActivate = confirm("Are you sure want to activate this user?");
+                if(!isTrueActivate){
+                    event.preventDefault();
+                }
+            });
+        });
+
+        deactivateButtons.forEach(function(button){
+            button.addEventListener("click", function(event){
+                let isTrueDeactivate = confirm("Are you sure want to deactivate this user?");
+                if(!isTrueDeactivate){
+                    event.preventDefault();
+                }
+            });
+        }); 
+    </script>
 </body>
 </html>
