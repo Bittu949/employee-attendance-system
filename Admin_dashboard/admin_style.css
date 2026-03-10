@@ -152,6 +152,7 @@ body {
 }
 .view-btn {
     padding: 8px 14px;
+    border: 1px solid #dee2e6;
     border-radius: 6px;
     background: white;
     cursor: pointer;
