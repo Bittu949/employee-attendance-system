@@ -171,3 +171,40 @@ body {
 .task-status {
     flex: 1;
 }
+
+@media (max-width: 768px) {
+
+    .app {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        background: white;
+        width: 100%;
+        border-right: none;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        gap: 3px;
+    }
+    .menu-item {
+        flex: 1;
+        text-align: center;
+        padding: 8px 4px;
+        font-size: 14px;
+    }
+    .summary-cards {
+        flex-direction: column;
+    }
+    .attendance-overview {
+        flex-direction: column;
+    }
+    .task-header {
+        display: none;
+    }
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
