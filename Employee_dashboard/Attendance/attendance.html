@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+    <div class="app">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="menu">
+                <a href="../emp_dashboard.html" class="menu-item menu-link">Dashboard</a>
+                <a href="../Profile/profile.html" class="menu-item menu-link">Profile</a>
+                <a href="attendance.html" class="menu-item active menu-link">Attendance</a>
+                <a href="../Settings/settings.html" class="menu-item menu-link">Settings</a>
+                <div class="menu-item menu-link">My Tasks <span>0</span></div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+
+            <!-- Header -->
+            <div class="dashboard-header">
+                <div>
+                    <div class="welcome">Attendance</div>
+                    <div class="sub-welcome">Track your daily attendance</div>
+                </div>
+                <button class="logout-btn">Logout</button>
+            </div>
+
+            <!-- Today Attendance Card -->
+            <div class="attendance-card">
+
+                <div class="attendance-item">
+                    <div class="label">Check-In</div>
+                    <div class="value">--:--</div>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="label">Check-Out</div>
+                    <div class="value">--:--</div>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="label">Working Hours</div>
+                    <div class="value">0h 0m</div>
+                </div>
+
+                <div class="attendance-item">
+                    <div class="label">Status</div>
+                    <div class="value status not-marked">Not Marked</div>
+                </div>
+
+                <div class="attendance-actions">
+                    <button class="attendance-btn">Check-In</button>
+                </div>
+            </div>
+
+            <!-- Attendance History -->
+            <div class="attendance-history">
+                <div class="section-title">
+                    Attendance History
+                </div>
+                <div class="history-header">
+                    <div>Date</div>
+                    <div>Check-In</div>
+                    <div>Check-Out</div>
+                    <div>Hours</div>
+                    <div>Status</div>
+                </div>
+                <div class="history-row">
+                    <div>02 Mar 2026</div>
+                    <div>09:58 AM</div>
+                    <div>06:01 PM</div>
+                    <div>8h 3m</div>
+                    <div class="present">Present</div>
+                </div>
+                <div class="history-row">
+                    <div>01 Mar 2026</div>
+                    <div>10:10 AM</div>
+                    <div>06:05 PM</div>
+                    <div>7h 55m</div>
+                    <div class="present">Present</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
