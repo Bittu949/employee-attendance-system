@@ -1,8 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="refresh" content="0; url=Admin_dashboard\admin_dashboard.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="login-box">
+        <div class="login-title">Login</div>
+        <form onsubmit="login(event)">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="admin / employee" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="admin / employee" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function login(event){
+            event.preventDefault();
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if(username === "admin" && password === "admin"){
+                window.location.href = "Admin_dashboard/admin_dashboard.html";
+            }
+            else if(username === "employee" && password === "employee"){
+                window.location.href = "Employee_dashboard/emp_dashboard.html";
+            }
+            else{
+                alert("Invalid username or password");
+            }
+        }
+    </script>
 </body>
 </html>
