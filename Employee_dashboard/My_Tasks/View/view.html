@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <div class="app">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="menu">
+                <a href="../../emp_dashboard.html" class="menu-item menu-link">Dashboard</a>
+                <a href="../../Profile/profile.html" class="menu-item menu-link">Profile</a>
+                <a href="../../Attendance/attendance.html" class="menu-item menu-link">Attendance</a>
+                <a href="../../Settings/settings.html" class="menu-item menu-link">Settings</a>
+                <a href="../my_tasks.html" class="menu-item active menu-link">My Tasks <span>0</span></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="dashboard-header">
+                <div>
+                    <div class="welcome">Task Details</div>
+                    <div class="sub-welcome">View task information</div>
+                </div>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+            <div class="task-card">
+                <div class="section-title">Task Information</div>
+                <div class="task-info">
+                    <div class="info-row">
+                        <div class="label">Task Title</div>
+                        <div class="value">Complete Timesheet</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="label">Description</div>
+                        <div class="value">Submit weekly work hours and project updates.</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="label">Deadline</div>
+                        <div class="value">05 Mar 2026</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="label">Priority</div>
+                        <div class="value priority high">High</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="label">Assigned Date</div>
+                        <div class="value">01 Mar 2026</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="label">Status</div>
+                        <select class="status-select">
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="update-btn">Update Status</button>
+                    <a href="../my_tasks.html" class="back-btn">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let button = document.getElementById("logoutBtn");
+
+        button.addEventListener("click", function(event){
+            let isConfirm = confirm("Are you sure want to logout ?");
+
+            if(isConfirm){
+                window.location.href = "../../../index.html";
+            }
+        })
+    </script>
+</body>
+</html>
